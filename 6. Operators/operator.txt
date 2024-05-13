@@ -1,0 +1,16 @@
+// there are 5 types of operators in java
+1. Arthimethic operators 
+there are two types of perators
+(+ , - , * , / , %) binary operators
+(++ , --) unary operators
+2. Relation operators
+(== , > , < , <=, >= , !=)
+3. Logical operators
+And operators(&&)
+OR operators(||)
+AND  operators (!)
+4.Bitwise operators
+(we read this operator in next chapter)
+5. Assignment operators
+(+= , -= , *= , /= , %=)
+
