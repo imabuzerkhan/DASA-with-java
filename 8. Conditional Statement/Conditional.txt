@@ -1,0 +1,29 @@
+Conditional Statement
+1. if Statement
+if(Condition){
+
+}
+2. if else Statement
+if(Condition){
+
+}esle{
+
+}
+3. else if Statement
+if(Condition){
+
+}esle if(){
+
+}else{
+
+}
+4. Trenary operator
+Condition ? true: false
+
+5. Switch Statement
+Switch(variable){
+  case:
+  case:
+  case:
+  default:
+}
