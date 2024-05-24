@@ -1,0 +1,14 @@
+function is a block of code
+function is code that is reuseable
+
+Syntax of function
+returnType name(){
+  //body
+  return Statement
+};
+syntax of function parameter
+returnType name(int a, int b){
+  //body
+  return Statement;
+}
+name(2,4);
