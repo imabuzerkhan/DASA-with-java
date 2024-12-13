@@ -40,17 +40,32 @@
 // ! practice no 4 
 // ? find the multiple of 2 
 
-public class Whileone {
+// public class Whileone {
 
-   public static void main(String[] args) {
-    int i = 2 ;
+//    public static void main(String[] args) {
+//     int i = 2 ;
    
 
-    while (i<=10) {
-      System.out.println(i);
+//     while (i<=10) {
+//       System.out.println(i);
 
-      i+=2;
+//       i+=2;
       
-    }
-   }
+//     }
+//    }
+// }
+
+
+// ! find the reverse of 123456
+
+public class Whileone{
+  public static void  main (String args[]){
+int n = 123456 ;
+while (n>0) {
+  int result = n % 10 ;
+  System.out.println(result);
+  n /= 10 ;
+}
+
+  }
 }
