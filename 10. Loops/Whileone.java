@@ -58,14 +58,26 @@
 
 // ! find the reverse of 123456
 
-public class Whileone{
-  public static void  main (String args[]){
-int n = 123456 ;
-while (n>0) {
-  int result = n % 10 ;
-  System.out.println(result);
-  n /= 10 ;
-}
+// public class Whileone{
+//   public static void  main (String args[]){
+// int n = 123456 ;
+// while (n>0) {
+//   int result = n % 10 ;
+//   System.out.println(result);
+//   n /= 10 ;
+// }
 
+//   }
+// }
+
+
+// ! for loop in java
+
+public class Whileone{
+  public static void main (String args[]){
+
+    for(int i=1; i<=10 ; i++ ){
+System.out.println("hello world how are you");
+    }
   }
 }
