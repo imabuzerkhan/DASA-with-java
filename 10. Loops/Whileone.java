@@ -73,11 +73,24 @@
 
 // ! for loop in java
 
-public class Whileone{
-  public static void main (String args[]){
+// public class Whileone{
+//   public static void main (String args[]){
 
-    for(int i=1; i<=10 ; i++ ){
-System.out.println("hello world how are you");
-    }
+//     for(int i=1; i<=10 ; i++ ){
+// System.out.println("hello world how are you");
+//     }
+//   }
+// }
+
+
+// ! do while loop
+
+public class Whileone {
+  public static void main(String[] args) {
+    int count = 0 ;
+    do{
+      System.out.println("hello world");
+      count ++ ;
+    } while(count<10) ;
   }
 }
