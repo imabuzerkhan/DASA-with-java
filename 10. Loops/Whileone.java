@@ -85,12 +85,12 @@
 
 // ! do while loop
 
-public class Whileone {
-  public static void main(String[] args) {
-    int count = 0 ;
-    do{
-      System.out.println("hello world");
-      count ++ ;
-    } while(count<10) ;
-  }
-}
+// public class Whileone {
+//   public static void main(String[] args) {
+//     int count = 0 ;
+//     do{
+//       System.out.println("hello world");
+//       count ++ ;
+//     } while(count<10) ;
+//   }
+// }
