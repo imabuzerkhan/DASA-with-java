@@ -12,10 +12,10 @@ public static boolean IsPrime(int n ){
      System.out.println("it is not a prime number");
   return false ;
    
-    }else{
-      System.out.println("it is a prime number");
-      return true ;
-    }
+    }// }else{
+    //   System.out.println("it is a prime number");
+    //   return true ;
+    // }
   }
  return true ; 
 }
@@ -23,7 +23,7 @@ public static boolean IsPrime(int n ){
 
 
   public static void main(String[] args) {
-   boolean value = IsPrime(2);
+   boolean value = IsPrime(5);
    System.out.println(value);
     
   }
