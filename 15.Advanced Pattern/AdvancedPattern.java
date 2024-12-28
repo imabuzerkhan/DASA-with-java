@@ -41,7 +41,7 @@ System.out.print("");
 
 
 // ! question no 3
-// * inverted half pyramid with number
+// * FloydTriangle with number
 
 public static void FloydTriangle(int number){
   int counter = 1 ;
@@ -55,6 +55,8 @@ public static void FloydTriangle(int number){
 
 }
 
+// ! question no 4
+// * inverted half pyramid with number
 public static void HalfPyramidWithNumber(int n){
   for(int i=1; i<=n; i++){
 for(int j=1; j<=(n-i)+1; j++){
@@ -65,11 +67,34 @@ System.out.println();
 }
 
 
+// ! question no 5
+// * tilt hallow traingle
+
+public static void tiltHallowtriangle(int rows, int cols){
+// * outer layer
+for(int i=1; i<=rows; i++){
+  // * spaces
+  for(int j=1; j<=rows-i;  j++ ){
+    System.out.print(" ");
+  }
+  for(int j =1; j<=cols; j++){
+    if(i==1|| i== rows || j==1 || j==cols ){
+      System.out.print("*");
+    }else{
+      System.out.print(" ");
+    }
+  }
+  System.out.println();
+}
+
+}
+
   public static void main(String[] args) {
     //* */ HallowRectangle(6, 5);
     //* */ HalfPyramid(5);
     // *FloydTriangle(5) ;
     //* */ HalfPyramidWithNumber(5);
+    tiltHallowtriangle(5, 5);
     
   }
 }
