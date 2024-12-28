@@ -147,7 +147,22 @@ System.out.println();
   }
 
 }
-
+// ! question 7 
+// * solid rhombus
+public static void solidRhombus(int n) {
+  // * outer loop
+  for(int i=1; i<=n; i++){
+    // spaces
+    for(int j=1; j<=n-i; j++){
+      System.out.print(" ");
+    }
+    for (int j=1; j<=n; j++){
+      System.out.print("*");
+    }
+    System.out.println();
+  }
+  
+}
   public static void main(String[] args) {
     //* */ HallowRectangle(6, 5);
     //* */ HalfPyramid(5);
@@ -155,7 +170,7 @@ System.out.println();
     //* */ HalfPyramidWithNumber(5);
     //* */ tiltHallowtriangle(5, 5);
     //* */ ZeroOneTrangle(5);
-    ButterflyPattern(4);
-    
+    // ButterflyPattern(4);
+    solidRhombus(4);
   }
 }
