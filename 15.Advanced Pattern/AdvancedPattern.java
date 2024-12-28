@@ -88,13 +88,74 @@ for(int i=1; i<=rows; i++){
 }
 
 }
+// ! question 5 
+// * 0.1 tragle
+
+public static void ZeroOneTrangle(int n ){
+  // * outer layer
+  for(int i=1; i<=n; i++){
+    // * inner layer
+    for(int j=1; j<=i; j++){
+      if((i+j) % 2 == 0){
+        System.out.print(1);
+      }else{
+        System.out.print(0);
+      }
+    }
+    System.out.println();
+  }
+}
+
+// ! question no 6 
+// * Butterfly pattern
+
+public static void ButterflyPattern(int n){
+// * outer loop
+for(int i =1; i<=n; i++){
+  // * star
+  for(int j=1; j<=i; j++){
+    System.out.print("*");
+  }
+  //* */ Spaces
+  for(int j=1; j<= 2*(n-i); j++){
+    System.out.print(" ");
+  }
+  // * star 
+  for(int j=1; j<=i; j++){
+    System.out.print("*");
+  }
+
+System.out.println();  
+
+}
+// * for second part
+// * outer loop
+for(int i =n; i>=1; i--){
+  // * star
+  for(int j=1; j<=i; j++){
+    System.out.print("*");
+  }
+  //* */ Spaces
+  for(int j=1; j<= 2*(n-i); j++){
+    System.out.print(" ");
+  }
+  // * star 
+  for(int j=1; j<=i; j++) {
+    System.out.print("*");
+  }
+System.out.println();
+  }
+
+}
 
   public static void main(String[] args) {
     //* */ HallowRectangle(6, 5);
     //* */ HalfPyramid(5);
     // *FloydTriangle(5) ;
     //* */ HalfPyramidWithNumber(5);
-    tiltHallowtriangle(5, 5);
+    //* */ tiltHallowtriangle(5, 5);
+    //* */ ZeroOneTrangle(5);
+    ButterflyPattern(4);
     
   }
 }
