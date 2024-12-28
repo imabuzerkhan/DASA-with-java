@@ -163,6 +163,39 @@ public static void solidRhombus(int n) {
   }
   
 }
+
+// ! question no 8 
+// * diamond pattern
+public static void Daimondpattern(int n) {
+  // 1st half of the diamond
+  for (int i = 1; i <= n; i++) {
+    // Print spaces
+    for (int j = 1; j <= n - i; j++) {
+        System.out.print(" ");
+    }
+    // Print stars
+    for (int j = 1; j <= (2 * i) - 1; j++) {
+        System.out.print("*");
+    }
+    System.out.println();
+}
+
+ // 2nd half of the diamond
+ for (int i = n - 1; i >= 1; i--) {
+  // Print spaces
+  for (int j = 1; j <= n - i; j++) {
+      System.out.print(" ");
+  }
+  // Print stars
+  for (int j = 1; j <= (2 * i) - 1; j++) {
+      System.out.print("*");
+  }
+  System.out.println();
+}
+}
+
+
+
   public static void main(String[] args) {
     //* */ HallowRectangle(6, 5);
     //* */ HalfPyramid(5);
@@ -170,7 +203,8 @@ public static void solidRhombus(int n) {
     //* */ HalfPyramidWithNumber(5);
     //* */ tiltHallowtriangle(5, 5);
     //* */ ZeroOneTrangle(5);
-    // ButterflyPattern(4);
-    solidRhombus(4);
+    //* */ ButterflyPattern(4);
+    //* */ solidRhombus(4);
+    Daimondpattern(5);
   }
 }
