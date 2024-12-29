@@ -203,8 +203,8 @@ public static void Daimondpattern(int n) {
     //* */ HalfPyramidWithNumber(5);
     //* */ tiltHallowtriangle(5, 5);
     //* */ ZeroOneTrangle(5);
-    //* */ ButterflyPattern(4);
+   ButterflyPattern(4);
     //* */ solidRhombus(4);
-    Daimondpattern(5);
+    // Daimondpattern(5);
   }
 }
