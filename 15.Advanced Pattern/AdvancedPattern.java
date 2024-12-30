@@ -194,7 +194,39 @@ public static void Daimondpattern(int n) {
 }
 }
 
+public static void NumberPyramid(int n){
+  for (int i = 1; i<=n; i++){
+    // Spacess
+    for(int j=1 ; j <= n-i; j++){
+      System.out.print(" ");
+    }
+    //  inner loop
+    for (int j = 1 ; j<=i; j++){
+      System.out.print(i + " ");
+    }
+    System.out.println();
+  }
+}
 
+// palindromic pattern
+public static void palindromic(int n){
+  // outter loop
+  for (int i =1 ; i<=n; i++){
+    // spaces
+    for (int j = 1 ; j<= n-i; j++){
+      System.out.print(" ");
+    }
+    // acending 
+    for (int j=i; j>=1; j--){
+      System.out.print(j + " ");
+    }
+    // for desc
+    for (int j=2; j<=i; j++){
+      System.out.print(j + " ");
+    }
+    System.out.println();
+  }
+}
 
   public static void main(String[] args) {
     //* */ HallowRectangle(6, 5);
@@ -203,8 +235,10 @@ public static void Daimondpattern(int n) {
     //* */ HalfPyramidWithNumber(5);
     //* */ tiltHallowtriangle(5, 5);
     //* */ ZeroOneTrangle(5);
-   ButterflyPattern(4);
+  // * ButterflyPattern(4);
     //* */ solidRhombus(4);
-    // Daimondpattern(5);
+    //* */ Daimondpattern(5);
+    // NumberPyramid(5);
+    palindromic(5);
   }
 }
