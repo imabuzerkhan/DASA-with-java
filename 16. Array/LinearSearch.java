@@ -17,7 +17,7 @@ public class LinearSearch {
       
       // Checking if the item was found
       if (Value.equals("Item not found")) {
-          System.out.println("The item you ordered is not available.");
+          System.out.println(" The item you ordered is not available.");
       } else {
           System.out.println("You ordered: " + Value);
       }
