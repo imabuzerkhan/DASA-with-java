@@ -5,7 +5,7 @@ public class LargestNumber {
   public static int Largestnumber(int number[]){
 // * print largest number in array using this techniques
     int largest = Integer.MIN_VALUE;
-    int Samllest = Integer.MIN_VALUE;
+    int Samllest = Integer.MAX_VALUE;
 
     // for largest number
     for(int i=0; i<number.length; i++){
@@ -20,7 +20,7 @@ public class LargestNumber {
   
    
     }
-    System.out.println("smallest number is" + Samllest);
+    System.out.println("smallest number is " + Samllest);
     
     return largest ;
 
