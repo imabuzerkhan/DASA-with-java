@@ -29,7 +29,7 @@ public class LargestNumber {
 
 
   public static void main(String[] args) {
-    int number[] = {2,4,3,74,2,1,9,4};
+    int number[] = {2,4,3,74,1,9,4};
    int LargestNumber = Largestnumber(number);
    System.out.println(LargestNumber);
   }
