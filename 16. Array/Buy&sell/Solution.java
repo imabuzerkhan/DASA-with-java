@@ -11,7 +11,7 @@ public class Solution {
         System.out.println("The maximum profit so far is " + maxProfit);  // Optional: Remove if not needed
       } else {
         minBuyingPrice = prices[i];  // Update minimum buying price
-      }
+      } 
     }
     return maxProfit;
   }
