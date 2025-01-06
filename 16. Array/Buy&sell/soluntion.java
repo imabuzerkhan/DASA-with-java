@@ -7,7 +7,8 @@ public class soluntion {
     int maxProfit = 0;
     for(int i=0; i<n; i++){
      if(BuyingPrices<prices[i]){
-      maxProfit = Math.max(maxProfit, prices[i]);
+      int profit = prices[i] - BuyingPrices ;
+      maxProfit = Math.max(maxProfit, profit);
      }else{
       BuyingPrices = prices[i];
      }
