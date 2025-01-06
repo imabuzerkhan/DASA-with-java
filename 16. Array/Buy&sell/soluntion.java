@@ -9,8 +9,10 @@ public class soluntion {
      if(BuyingPrices<prices[i]){
       int profit = prices[i] - BuyingPrices ;
       maxProfit = Math.max(maxProfit, profit);
+      System.out.println("the maxium profit is " + maxProfit);
      }else{
       BuyingPrices = prices[i];
+   
      }
     }
     return maxProfit ;
