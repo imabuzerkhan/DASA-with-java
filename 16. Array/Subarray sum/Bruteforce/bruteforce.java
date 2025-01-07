@@ -1,7 +1,7 @@
 public class bruteforce {
   public static void SubarraySum(int Array[]){
-    // int maxValue = Integer.MIN_VALUE ;
-    // int currSum = 0 ;
+    int maxValue = Integer.MIN_VALUE ;
+    int currSum = 0 ;
    
     // outer loop
     for (int i=0; i<Array.length; i++){
@@ -9,8 +9,12 @@ public class bruteforce {
       // ineer loop
       for(int j=i; j<Array.length; j++){
         int end = j ;
+       
         // inner 
       for (int k=start; k<=end; k++){
+        if(currSum < maxValue){
+          currSum = maxValue ;
+        }
 System.out.print(Array[k] + " ");
       }
       System.out.println();
