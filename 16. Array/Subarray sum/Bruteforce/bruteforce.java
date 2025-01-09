@@ -1,26 +1,24 @@
-//  print sum of subarray pairs
-public class bruteforce {
-  public static void Sum(int num[]){
-    int Maxium = Integer.MIN_VALUE;
-    int curr = 0 ;
+public class bruteforce{
+  public static void BruteForce(int number[]){
+int n = number.length;
+    int maxium = Integer.MIN_VALUE;
+    for(int i=0; i<n; i++){
+      int curr = 0;
+      for(int j=i; j<n; j++){
+        curr += number[j];
+       
 
-    for(int i =0; i<num.length; i++){
-      int start = i;
-     
-      for(int j=i; j<num.length; j++){
-       int end = j ;
-        for(int k=start; k<end; k++){
-         curr += num[k];
-      
+        if(maxium<curr){
+          maxium = curr;
+          
         }
-        System.out.println();
+        
       }
-      System.out.println();
     }
+    System.out.println("the maxium no is " + maxium);
   }
-  
-
-  public static void main (String args[]){
-    int num[] = {2,4,6,8,10};
+  public static void main(String[] args) {
+    int number[] = {2,4,6,8,10};
+    BruteForce(number);
   }
 }
