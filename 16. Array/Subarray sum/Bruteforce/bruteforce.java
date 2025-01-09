@@ -6,14 +6,12 @@ public class bruteforce {
 
     for(int i =0; i<num.length; i++){
       int start = i;
-      curr = 0 ;
+     
       for(int j=i; j<num.length; j++){
        int end = j ;
         for(int k=start; k<end; k++){
-          if(curr<Maxium){
-            curr = Maxium;
-          }
-          System.out.print(num[k]);
+         curr += num[k];
+      
         }
         System.out.println();
       }
