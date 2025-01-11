@@ -3,7 +3,10 @@ public class Question3Reverse {
   public static void ReverseArray(int num[]){
     int start = 0;
     int end = num.length-1;
-    while(start<end){
+    while(start<end){ 
+      // Step 1: start = 0, end = 6 (first and last elements)
+//       Swap num[0] and num[6] → {9, 4, 6, 3, 8, 4, 1}
+// Move start to 1, end to 5.
       int temp = num[end];
       num[end] = num[start];
       num[start] = temp;
