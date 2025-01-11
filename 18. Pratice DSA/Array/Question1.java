@@ -1,5 +1,5 @@
 /*
- *Maximum and minimum of an array using minimum number of comparisons
+minimum of an array using minimum number of comparisons
  */
 
  public class Question1{
