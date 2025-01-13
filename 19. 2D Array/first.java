@@ -6,7 +6,7 @@ public class first {
   public static void main(String[] args) {
     // write 2d array
     int matrix[][] = new int [3][3];
-    int n = matrix.length; int m= matrix[0].length;
+    int n = matrix.length; int m = matrix[0].length;
     // taking input
     Scanner sc  = new Scanner(System.in);
     // outer loop 
@@ -18,11 +18,12 @@ public class first {
         // store i and j value in matrix and take input from user to show in output
         matrix[i][j] = sc.nextInt();
       }
+    
     }
     // print the output now
     for(int i=0; i<n; i++){
       for(int j=0; j<m; j++){
-        System.out.print(matrix[i][j]);
+        System.out.print(matrix[i][j] + " " );
       }
       System.out.println();
     }
