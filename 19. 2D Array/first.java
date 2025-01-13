@@ -25,6 +25,7 @@ public class first {
       for(int j=0; j<m; j++){
         System.out.print(matrix[i][j] + " " );
       }
+      // print new line
       System.out.println();
     }
 
