@@ -5,7 +5,7 @@ public class Bubble {
     for (int trun = 0 ; trun < num.length-1; trun++){
 // inner loop
 for (int j = 0 ; j < num.length - 1 - trun ; j ++){
-     if(num[j] < num[j+1]){
+     if(num[j] > num[j+1]){
       // swap 
       int temp = num[j];
        num[j] = num[j+1];
@@ -18,7 +18,7 @@ for (int j = 0 ; j < num.length - 1 - trun ; j ++){
   }
 
   public static void Array(int num[]){
-    for(int i=0; i<num.length-1; i++){
+    for(int i=0; i<num.length; i++){
       System.out.println(num[i]);
     }
     System.out.println();
