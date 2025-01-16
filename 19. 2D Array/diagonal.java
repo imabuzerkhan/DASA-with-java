@@ -2,14 +2,26 @@ public class diagonal {
   public static int DaigonalSum(int matrix[][]){
   // Bruteforce tecnique
     int sum = 0;
+    // for(int i=0; i<matrix.length; i++){
+    //   for(int j=0; j<matrix.length; j++){
+    //     if(i==j){
+    //       sum += matrix[i][j];
+    //     }else if(i+j == matrix.length-1) {
+    //       sum += matrix[i][j];
+    //     }
+    //   }
+    // }
+
+    //? another tecniques
     for(int i=0; i<matrix.length; i++){
-      for(int j=0; j<matrix.length; j++){
-        if(i==j){
-          sum += matrix[i][j];
-        }else if(i+j == matrix.length-1) {
-          sum += matrix[i][j];
-        }
+      // primary diagonal
+      sum += matrix[i][i];
+      // for over lapping se bachne ke liye
+      if(i != matrix.length-1-i){
+// Secondry diagonal 
+sum += matrix[i][matrix.length-1-i];
       }
+      
     }
     return sum ;
   }
