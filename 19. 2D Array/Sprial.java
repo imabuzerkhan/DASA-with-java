@@ -9,29 +9,36 @@ public class Sprial {
 while(Startrow <= Endrow && Startcol <= EndCol){
   // print => top => Stratrow
   for(int j=Startcol; j<=EndCol; j++){
-    System.out.print(matrix[Startrow][j]);
+    System.out.print(matrix[Startrow][j] + " ");
 
-    Startrow ++;
+   
   }
+ 
   // print => right => end col
   for(int i= Startrow+1;i<=Endrow; i++ ){
-    System.out.print(matrix[i][EndCol]);
+    System.out.print(matrix[i][EndCol] + " ");
 
-    EndCol -- ;
+    
   }
+  
 
   // print => Bottom => end row 
-  for(int j=EndCol-1; j>= Endrow; j--){
-    System.out.print(matrix[Endrow][j]);
+  for(int j=EndCol-1; j>= Startcol; j--){
+    System.out.print(matrix[Endrow][j] + " ");
 
-    Endrow--;
+   
   }
+
    // print => left => Start col
    for(int i=Endrow-1; i>= Startrow+1; i--){
-    System.out.print(matrix[i][Startcol]);
+    System.out.print(matrix[i][Startcol] + " ");
 
-    Startcol ++;
+    
    }
+ Startrow++;
+ Startcol ++;
+ Endrow --;
+ EndCol --; 
 
 }
 System.out.println();
